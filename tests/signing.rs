@@ -14,10 +14,9 @@
 extern crate vade_signer;
 
 use std::{env, error::Error};
-use vade_signer::signing::{LocalSigner, RemoteSigner, Signer};
+use vade_signer::{LocalSigner, RemoteSigner, Signer};
 
-pub const DEFAULT_VADE_EVAN_SIGNING_URL: &str =
-    "http://localhost:7070/key/sign";
+pub const DEFAULT_VADE_EVAN_SIGNING_URL: &str = "http://localhost:7070/key/sign";
 pub const LOCAL_SIGNER_1_PRIVATE_KEY: &str =
     "dfcdcb6d5d09411ae9cbe1b0fd9751ba8803dd4b276d5bf9488ae4ede2669106";
 pub const LOCAL_SIGNER_1_SIGNED_MESSAGE_HASH: &str =
@@ -26,7 +25,6 @@ pub const REMOTE_SIGNER_1_PRIVATE_KEY: &str =
     "dfcdcb6d5d09411ae9cbe1b0fd9751ba8803dd4b276d5bf9488ae4ede2669106";
 pub const REMOTE_SIGNER_1_SIGNED_MESSAGE_HASH: &str =
     "0x52091d1299031b18c1099620a1786363855d9fcd91a7686c866ad64f83de13ff";
-
 
 #[tokio::test]
 async fn can_sign_messages_locally() -> Result<(), Box<dyn Error>> {

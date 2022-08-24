@@ -18,4 +18,5 @@
 
 //! [`Vade`]: https://docs.rs/vade/*/vade/struct.Vade.html
 
-pub mod signing;
+mod signing;
+pub use signing::*;
