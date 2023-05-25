@@ -3,6 +3,7 @@
 ## v0.0.2
 
 - update dependencies
+- update dependencies for critical vulnerabilities
 
 ## Initial Version
 
