@@ -15,7 +15,7 @@
 */
 
 use async_trait::async_trait;
-use secp256k1::{sign, Message, SecretKey, Signature};
+use libsecp256k1::{sign, Message, SecretKey, Signature};
 use serde::{Deserialize, Serialize};
 use sha2::Digest;
 use sha3::Keccak256;
